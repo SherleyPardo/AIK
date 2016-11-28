@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<div>
+      <select id="colores" onchange="cambiarColor()">
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
+      </select>  
+</div>
+
+<div id="contenido">
+      <strong>
+            Este Div recibe el color
+      </strong>
+</div>
+
+<div>
+    <button type="button" onclick="apagar()">Apagar</button>
+    <img src="myImage/bombillo-of.jpg" id="myImage" width="200" height="300">
+    <button type="button" onclick="encender()">Encender</button>
+</div>
+
+
+<script type = "text/javascript">
+
+function apagar()
+{
+      document.getElementById("myImage").src='myImage/bombillo-on.jpg';
+}
+
+function encender()
+{
+      document.getElementById("myImage").src='myImage/bombillo-of.jpg';
+}
+
+function cambiarColor()
+      {
+            var colorRecibido = document.getElementById ("colores").value;
+            document.getElementById("contenido").style.backgroundColor = colorRecibido;
+            document.getElementById("contenido").innerHTML = "Hola Javascript"
+      }
+
+      var a = "Hola desde Javascript";
+      var b;
+      var x = "";
+
+      var conjunto = [1,20,300,40,5,64,17,80,9];
+
+      for (var x = 0; x < conjunto.length; x++)
+      {
+            console.log(conjunto[x]);
+      }
+
+
+      var frutas = ["banano", "manzana", "naranja", "Mango"];
+                  console.log (frutas.toString() );
+                  console.log (frutas.join (" * "));
+
+      var libreria = 
+      [
+            {
+                  titulo: "La divina Comedia",
+                  autor: "Dante Alighieri",
+                  precio:25000
+            },
+            {
+                  titulo: "El Quijote",
+                  autor: "Miguel de Cervantes Saavedra"
+            }
+      ];
+
+
+      var persona = {
+            nombre: "Sherley Johana Pardo",
+            telefono: "3207158697",
+            estado_civil: "Casada",
+            edad: 26,
+            saludar: function()
+            {
+                  return "Hola a todos";
+            },
+
+            sumar: function(a, b)
+            {
+                  return a+b;
+            }
+      }
+      
+      console.log ("Mi Nombre es: "+ persona.nombre+ " "+ persona.saludar()+ " La suma es : "+ persona.sumar (5,4));
+</script>
+      	
+</body>
+ </html>

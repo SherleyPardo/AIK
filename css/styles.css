@@ -1,0 +1,75 @@
+ #titulo > h1 /*Titulo Principal de cada Pagina*/
+{
+	color: #8CC602;
+	font-size: 50px;
+	font-family: 'Arial';
+}
+
+ #tituloseccion > h3 /*Titulo desección de cada pagina*/
+{
+	color: #00ADEF;
+	font-size: 30px;
+}
+
+#tituloarticulo > h2 /*Titulo Articulo de cada Pagina*/
+{
+	color: #8CC602;
+	font-size: 25px;
+	font-family: 'Arial';
+}
+
+#piedepagina  /*Pie de Pagina*/
+{
+	color: white;
+	font-size: 20px;
+	font-family: "Open Sans";
+	background-color: #0071BD;
+	padding: 10px;
+	clear: both;
+}
+
+header
+{
+	background-color: #0071BD;
+}
+
+nav > a
+{
+	color: white;
+	font-size: 20px;
+	font-family: "Open Sans";
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+body 
+{
+	padding: 20px;
+	background-color: #FFFFFF;
+}
+
+p
+{
+	font-size: 15px;
+	font-family: 'Arial';
+}
+
+.secciondosizquierda /*Alinear el texto dos a la izquierda*/
+{
+	font-size: 15px;
+	font-family: 'Arial';
+	text-align: left;
+	width: 70%;
+
+}
+aside 
+{
+	float: right;
+	width: 30%;
+}
+
+aside > img
+{
+	border: 2px solid gray;
+}
